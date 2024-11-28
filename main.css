@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #00030D;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.nav-link {
+    color: #fff;
+    text-align: center;
+}
+
+.navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+/* Inicio */
+#start,
+#products,
+#promotions {
+    margin-top: 7vh;
+}
+
+#start img {
+    height: 90vh;
+    
+}
+
+.carousel-inner {
+    width: 90%;
+    
+}
+
+.carousel {
+    justify-items: center;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Produtos */
+#products,
+#promotions {
+    
+    justify-items: center;
+}
+
+#products h2,
+#promotions h2 {
+    margin: 5% 0;
+}
+
+.product,
+.promotion {
+    display: grid;
+    grid-template-columns: repeat(3, 32.6%);
+    column-gap: 1%;
+    row-gap: 1%;
+}
+
+.product article {
+    display: block;
+    justify-items: center;
+    padding: 5%;
+}
+
+.product article:hover {
+    border: 1px solid #151E26;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product p,
+.card p {
+    text-align: justify;
+    height: 230px;
+}
+
+.product h4 {
+    margin-top: 3%;
+    text-transform: uppercase;
+}
+
+.product button,
+.card button {
+    float: right;
+}
+
+.product article .price,
+.card .price {
+    float: left;
+}
+
+.card button {
+    width: 30%;
+}
+
+@media screen and (max-width: 767px) {
+    .product,
+    .promotion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .product article,
+    .card {
+        margin: 10px 0;
+    }
+
+    #start img {
+        height: 40vh;     
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .product,
+    .promotion {
+        grid-template-columns: repeat(2, 49.5%);
+    }
+
+    #start img {
+        height: 40vh;     
+    }
+
+    .card img {
+        height: 490px;
+    }
+
+    .product img {
+        height: 380px;
+    }
+}

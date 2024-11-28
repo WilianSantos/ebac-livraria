@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header id="header">
+        <div class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container">
+                <h1>Livraria</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item"><a class="nav-link active" href="#start">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#products">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#promotions">Promoções</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+   <div class="container" data-bs-spy="scroll" data-bs-target="#header">
+         <!-- Inicio -->
+        <section id="start">
+            <div id="inspiration-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div  class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block w-100" src="./images/books-2596809_1920.jpg">
+                        <div class="carousel-caption">
+                            <h2>Leia mais</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="./images/books-8067850_1920.jpg">
+                        <div class="carousel-caption">
+                            <h2>A leitura trasforma vidas</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="./images/library-5612441_1920.jpg">
+                        <div class="carousel-caption">
+                            <h2>Ler previne doenças relacionadas ao cerebro</h2>
+                        </div>
+                    </div>
+                    <button data-bs-target="#inspiration-carousel" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button> type="button"
+                    <button data-bs-target="#inspiration-carousel" data-bs-slide="next" class="carousel-control-next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#inspiration-carousel" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#inspiration-carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#inspiration-carousel" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Produtos -->
+         <section id="products">
+            <h2 class="h2">Livros</h2>
+            <div class="product">
+                <article>
+                    <img src="./images/NAO_ME_FACA_PENSAR_ATUALIZADO.jpg" alt="">
+                    <h4 class="h5">NÃO ME FAÇA PENSAR</h4>
+                    <p class="fs-6 text-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum reiciendis mollitia, iure dolore animi tenetur temporibus dolorem unde quos molestias velit natus magni, pariatur quam voluptates sed! Hic, sapiente laudantium?</p>
+                    <div class="price">
+                        <strong>R$ 75,00</strong>
+                    </div>
+                    <button type="button" class="btn btn-success btn-md">Comprar</button>
+                </article>
+                <article>
+                    <img src="./images/ORACAO.jpg" alt="">
+                    <h4 class="h5">ORAÇÃO</h4>
+                    <p class="fs-6 text-body-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi voluptas ratione molestias, quam architecto beatae suscipit distinctio repellendus fugit hic iusto autem perferendis facilis incidunt? Sunt aperiam enim asperiores rem.</p>
+                    <div class="price">
+                        <strong>R$ 75,00</strong>
+                    </div>
+                    <button type="button" class="btn btn-success btn-md">Comprar</button>
+                </article>
+                <article>
+                    <img src="./images/O_PROGRAMADOR_PRAGMATICO.jpg" alt="">
+                    <h4 class="h5">O Programador Pragmático</h4>
+                    <p class="fs-6 text-body-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea voluptas ullam magnam error maxime quos asperiores soluta, repellendus corrupti. Deserunt hic facilis qui dolorum! Quisquam delectus quo dolore voluptas a.</p>
+                    <div class="price">
+                        <strong>R$ 75,00</strong>
+                    </div>
+                    <button type="button" class="btn btn-success btn-md">Comprar</button>
+                </article>
+                <article>
+                    <img src="./images/verdade_absoluta.jpg" alt="">
+                    <h4 class="h5">Verdade Absoluta</h4>
+                    <p class="fs-6 text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In maxime nemo ab, reprehenderit perspiciatis dolores fugiat voluptas ratione placeat eum molestias eaque laudantium, enim soluta blanditiis vero similique debitis quia?</p>
+                    <div class="price">
+                        <strong>R$ 75,00</strong>
+                    </div>
+                    <button type="button" class="btn btn-success btn-md">Comprar</button>
+                </article>
+            </div>
+         </section>
+         <!-- Promoções -->
+          <section id="promotions">
+            <h2>Promoções</h2>
+            <div class="promotion">
+                    <div class="card">
+                        <img src="./images/O_PROGRAMADOR_PRAGMATICO.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">O Programador Pragmático</h4>
+                            <p class="fs-6 text-body-secondary">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsum rem, consectetur doloremque explicabo cum, qui reiciendis quisquam quam modi eaque, quo ut pariatur totam harum. Consectetur, id tenetur. Expedita?
+                            </p>
+                            <div class="price">
+                                <del>R$ 75,00</del>
+                                <strong>R$ 30,00</strong>
+                            </div>
+                            <button type="button" class="btn btn-success btn-md">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/ORACAO.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Oração</h4>
+                            <p class="fs-6 text-body-secondary">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsum rem, consectetur doloremque explicabo cum, qui reiciendis quisquam quam modi eaque, quo ut pariatur totam harum. Consectetur, id tenetur. Expedita?
+                            </p>
+                            <div class="price">
+                                <del>R$ 75,00</del>
+                                <strong>R$ 30,00</strong>
+                            </div>
+                            <button type="button" class="btn btn-success btn-md">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/NAO_ME_FACA_PENSAR_ATUALIZADO.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Não me faça pensar</h4>
+                            <p class="fs-6 text-body-secondary">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsum rem, consectetur doloremque explicabo cum, qui reiciendis quisquam quam modi eaque, quo ut pariatur totam harum. Consectetur, id tenetur. Expedita?
+                            </p>
+                            <div class="price">
+                                <del>R$ 75,00</del>
+                                <strong>R$ 30,00</strong>
+                            </div>
+                            <button type="button" class="btn btn-success btn-md">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/verdade_absoluta.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Verdade Absoluta</h4>
+                            <p class="fs-6 text-body-secondary">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsum rem, consectetur doloremque explicabo cum, qui reiciendis quisquam quam modi eaque, quo ut pariatur totam harum. Consectetur, id tenetur. Expedita?
+                            </p>
+                            <div class="price">
+                                <del>R$ 75,00</del>
+                                <strong>R$ 30,00</strong>
+                            </div>
+                            <button type="button" class="btn btn-success btn-md">Comprar</button>
+                        </div>
+                    </div>
+            </div>
+          </section>
+   </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
